@@ -16,3 +16,11 @@ def query(filename, column_index, value):
     pass
 ```
 
+Proposals for step 2.
+ 
+ - Single CSV -> Multple CSVs
+ - CSV -> JSON
+ - Exact matching -> Fuzzy matching
+ - No time restiction -> Time restriction E.g. 1 sec with a very large file.
+ - No memory restriction -> Memory restriction E.g. 10mb with a 100mb file.
+ - Matching multiple columns... joins...
