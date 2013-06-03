@@ -49,6 +49,11 @@ class TestQuery(unittest.TestCase):
             rows = query(filename, 0, "b")
             self.assertEqual(rows, [["b"]])
 
+    def test_multiple_columns(self):
+        with csv_file([["a", "p"]]) as filename:
+            rows = query(filename, 0, "a")
+            self.assertEqual(rows, [["a", "p"]])
+
 
 if __name__ == '__main__':
     unittest.main()
